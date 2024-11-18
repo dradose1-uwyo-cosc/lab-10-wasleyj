@@ -1,12 +1,9 @@
-# Your Name Here
+# Wesley Jones
 # UWYO COSC 1010
-# Submission Date
-# Lab XX
-# Lab Section: 
+# 11/18/2024
+# Lab 10
+# Lab Section: 14
 # Sources, people worked with, help given to: 
-# your
-# comments
-# here
 
 #import modules you will need 
 
