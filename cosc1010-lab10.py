@@ -16,6 +16,21 @@ from pathlib import Path
 def get_hash(to_hash):
     """You can use """
     return sha256(to_hash.encode('utf-8')).hexdigest().upper()
+try:
+    hash=Path('hash').read_text(encoding='utf-8')
+except:
+    print("file hash unable to be read")
+
+try:
+    password_list=Path('rockyou.txt').read_text(encoding='utf-8').splitlines()
+except:
+    print("file rock you was unable to be read") 
+
+for password in password_list:
+    check = get_hash(password) 
+    if check == hash:
+        print(password)
+        break
 
 
 
